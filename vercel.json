@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "*.py",
+            "use": "@matanpolik/mpportfolio"
+        }
+    ],
+    "routes": [
+        {
+            "src": "(.*)",
+            "dest": "main.py"
+        }
+    ]
+  }
