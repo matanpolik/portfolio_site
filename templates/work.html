@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <meta content="description" name="description" />
+    <meta name="google" content="notranslate" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="{{ url_for('static', filename='assets/apple-icon-180x180.png') }}"
+    />
+    <link
+      href="{{ url_for('static', filename='assets/favicon.ico') }}"
+      rel="icon"
+    />
+    <title>HSTS</title>
+
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="{{ url_for('static', filename='main.css') }}"
+    />
+  </head>
+
+  <body class="">
+    <div id="site-border-left"></div>
+    <div id="site-border-right"></div>
+    <div id="site-border-top"></div>
+    <div id="site-border-bottom"></div>
+    <header>
+      <nav class="navbar  navbar-fixed-top navbar-default">
+        <div class="container">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar-collapse"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav ">
+              <li><a href="{{ '/index.html' }}" title="">01 : Home</a></li>
+              <li><a href="{{ '/works.html' }}" title="">02 : Projects</a></li>
+              <li><a href="{{ '/about.html' }}" title="">03 : About me</a></li>
+              <li><a href="{{ '/contact.html' }}" title="">04 : Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="section-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="card-container">
+              <div class="text-center">
+                <h1 class="h2">001 : Online Test System</h1>
+              </div>
+              <h1 class="h2">001 : Online Test System</h1>
+              <p>
+                <b>The School Test System is a computerized information system designed for managing exams in a high school.</b>
+                <br>Its main objectives are to centralize all exam-related activities, enhance efficiency, and improve the reliability of exam processing.
+                <br>The system aims to achieve the following goals:<br>1) Create exams at two levels: (a) Manage a question bank for various subjects, and (b) Generate exams from the question bank.
+                <br>2) Facilitate exam administration. <br>3) Conduct exam grading and record scores. <br>4) Data processing, analysis, and presentation, including generating various statistics on exams, scores, and student performance.
+              </p>
+              <p>
+                <br>
+                We utilized <b>Java (OCSF server-clent framework, EVENTBUS), JavaFX GUI, SQL, and Git.</b><br> Our team of 5
+                members was responsible for designing, implementing, and testing the system.
+                <br>This experience enhanced my programming skills in Java and provided handson experience with server-client communication and data management using
+                SQL. <br><b>I have gained valuable knowledge and skills from this project that I look
+                forward to applying in future endeavors.</b>
+              </p>
+              <h1 class="h2">CODE : <a href="https://github.com/matanpolik/online_tests_system" target="_blank">GITHUB</a></h1>
+
+              <blockquote>
+              </blockquote>
+            </div>
+          </div>
+
+          <div class="col-md-8 col-md-offset-2 section-container-spacer">
+            <div class="row">
+              <div class="col-xs-12 col-md-9">
+                <img
+                  src="static/assets/images/work001-02.png"
+                  class="img-responsive"
+                  alt=""
+                />
+                <p>Login Page</p>
+              </div>
+              <div class="col-xs-12 col-md-9">
+                <img
+                  src="static/assets/images/work001-01.png"
+                  class="img-responsive"
+                  alt=""
+                />
+                <p>Teachers home page and menu</p>
+              </div><div class="col-xs-12 col-md-9">
+                <img
+                  src="static/assets/images/work001-03.png"
+                  class="img-responsive"
+                  alt=""
+                />
+                <p>Students home page and menu</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer-container text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <p>
+              Website created by Matan Polik 2023
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+        navActivePage();
+      });
+    </script>
+
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='main.js') }}"
+    ></script>
+  </body>
+</html>

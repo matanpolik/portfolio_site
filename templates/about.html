@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta content="width=device-width,initial-scale=1" name="viewport" />
+  <meta content="description" name="description" />
+  <meta name="google" content="notranslate" />
+
+  <link rel="apple-touch-icon" sizes="180x180"
+    href="{{ url_for('static', filename='assets/apple-icon-180x180.png') }}" />
+  <link href="{{ url_for('static', filename='assets/favicon.ico') }}" rel="icon" />
+  <title>Title page</title>
+
+  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
+</head>
+
+<body class="">
+  <div id="site-border-left"></div>
+  <div id="site-border-right"></div>
+  <div id="site-border-top"></div>
+  <div id="site-border-bottom"></div>
+  <!-- Add your content of header -->
+  <header>
+    <nav class="navbar  navbar-fixed-top navbar-default">
+      <div class="container">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav ">
+            <li><a href="{{ '/index.html' }}" title="">01 : Home</a></li>
+            <li><a href="{{ '/works.html' }}" title="">02 : Projects</a></li>
+            <li><a href="{{ '/about.html' }}" title="">03 : About me</a></li>
+            <li><a href="{{ '/contact.html' }}" title="">04 : Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="section-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="section-container-spacer text-center">
+            <h1 class="h2">03 : About me</h1>
+          </div>
+
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="row">
+                <div class="col-xs-12 col-md-8">
+                  <h3>Hi there!</h3>
+                  <p>
+                    I am a Computer Science student in my second year of Bachelor’s degree at
+                    Haifa University. I am a team player and highly motivated with creative and
+                    analytical thinking. Looking for my first position as a software developer.
+                  </p>
+                  <h3>Which courses have you completed?</h3>
+                  <p>
+                    Intro to CS (100), OOP (81), SW Engineering (96), intro to logics (93),
+                    data structures (79), Algorithms, assembly (96), Operating Systems (82),
+                    media compression (86), intro to HW (78).
+                  </p>
+                  <h3>Technical Skills</h3>
+                  <p>
+                    <b>Programming Languages: C, C++, Python, Java</b>
+<br>- <b>C:</b> Learned through Intro to CS and used in the OS course with Linux RedHat.
+<br>- <b>C++:</b> Utilized in an OOP course.
+<br>- <b>Python:</b> Proficient in basic syntax and experienced with Flask.
+<br>- <b>Java:</b> Knowledge of Hibernate, OCSF server-client framework, and basic
+syntax.
+<br><b>Web development:</b> HTML structure and syntax.
+<br><b>Operating Systems:</b> Linux (RedHat) -Extensive experience with RedHat Linux
+during the OS course, MAC OS.
+<br><b>Languages:</b> Hebrew - native, English - Excellent.
+                  </p>
+                  <h3>Army Service</h3>
+                  <p>
+                    <b>Lieutenant Commander - Snapir Unit, Israeli Navy.</b>
+                    <br>Commander of a military boat, with a crew of 12 combat soldiers. Command on
+                    various operations on daily basis, under high stress and harsh conditions.
+                    Used and integrated classified technological navy devices. 7 months of extra career service.
+                  </p>
+                </div>
+                <div class="col-xs-12 col-md-5" style="padding: 40px;">
+                  <img
+                    src="https://firebasestorage.googleapis.com/v0/b/portfolio-flask.appspot.com/o/profil.jpg?alt=media&token=72b30c0f-3083-4391-889c-f0beed5a901c"
+                    class="img-responsive" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-container text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <p>
+            Website created by Matan Polik 2023
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      navActivePage();
+    });
+  </script>
+  <script type="text/javascript" src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+
+</html>
